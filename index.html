@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishabh Mitra | Advocate &amp; Compliance Counsel</title>
+<meta name="description" content="Rishabh Mitra, enrolled advocate specialising in cross-border regulatory compliance and transactional law, relocating to Vilnius in September 2026 for a Master in Law, Technology and Business.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16213A;
+    --ink-deep:#0D1524;
+    --brass:#B4894F;
+    --brass-light:#D8B27C;
+    --maroon:#7A3434;
+    --stone:#EDE7D9;
+    --stone-dark:#DBD2BC;
+    --text:#26241F;
+    --text-soft:#5B564C;
+    --paper:#F6F2E7;
+    --serif-display:'Fraunces', serif;
+    --serif-body:'Source Serif 4', serif;
+    --mono:'Space Mono', monospace;
+    --max:1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--stone);
+    color:var(--text);
+    font-family:var(--serif-body);
+    font-size:17px;
+    line-height:1.6;
+    background-image:
+      radial-gradient(ellipse at top left, rgba(180,137,79,0.06), transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(122,52,52,0.05), transparent 55%);
+  }
+
+  a{color:inherit;}
+  .skip-link{position:absolute; left:-999px; top:0; background:var(--ink); color:var(--paper); padding:0.75rem 1.25rem; z-index:100; font-family:var(--mono);}
+  .skip-link:focus{left:1rem; top:1rem;}
+
+  :focus-visible{outline:2px solid var(--maroon); outline-offset:3px;}
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--maroon);
+  }
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 1.75rem;}
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(237,231,217,0.88);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--stone-dark);
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:0.9rem; padding-bottom:0.9rem;}
+  .brandmark{font-family:var(--mono); font-weight:700; letter-spacing:0.08em; font-size:0.95rem; text-decoration:none; border:1.5px solid var(--ink); padding:0.25rem 0.55rem;}
+  .navlinks{display:flex; gap:1.6rem; font-family:var(--mono); font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .navlinks a{text-decoration:none; color:var(--ink); position:relative; padding-bottom:2px;}
+  .navlinks a:hover{color:var(--maroon);}
+  @media (max-width:640px){ .navlinks{gap:1rem; font-size:0.68rem;} }
+
+  /* ---------- HERO ---------- */
+  header.hero{padding:5rem 0 4.5rem; position:relative; overflow:hidden;}
+  .hero-grid{display:grid; grid-template-columns:1.5fr 1fr; gap:3rem; align-items:center;}
+  @media (max-width:840px){ .hero-grid{grid-template-columns:1fr; gap:2.5rem;} }
+
+  .hero h1{
+    font-family:var(--serif-display);
+    font-weight:900;
+    font-optical-sizing:auto;
+    font-size:clamp(2.6rem, 6vw, 4.6rem);
+    line-height:0.98;
+    margin:0.5rem 0 1rem;
+    color:var(--ink);
+  }
+  .hero .role{
+    font-family:var(--serif-display);
+    font-style:italic;
+    font-weight:400;
+    font-size:clamp(1.1rem, 2vw, 1.4rem);
+    color:var(--maroon);
+    margin:0 0 1.4rem;
+  }
+  .hero p.lede{max-width:46ch; color:var(--text-soft); font-size:1.05rem;}
+
+  .hero-actions{display:flex; flex-wrap:wrap; gap:0.9rem; margin-top:1.8rem;}
+  .btn{
+    font-family:var(--mono); font-size:0.78rem; letter-spacing:0.05em; text-transform:uppercase;
+    text-decoration:none; padding:0.85rem 1.4rem; display:inline-block; border:1.5px solid var(--ink);
+    transition:background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+  .btn-solid{background:var(--ink); color:var(--paper);}
+  .btn-solid:hover{background:var(--maroon); border-color:var(--maroon); transform:translateY(-2px);}
+  .btn-outline{background:transparent; color:var(--ink);}
+  .btn-outline:hover{background:var(--ink); color:var(--paper); transform:translateY(-2px);}
+
+  .hero-meta{margin-top:2rem; font-family:var(--mono); font-size:0.8rem; color:var(--text-soft); display:flex; flex-direction:column; gap:0.35rem;}
+  .hero-meta strong{color:var(--ink);}
+
+  .portrait-frame{
+    width:min(280px, 100%); aspect-ratio:1/1; margin-inline:auto;
+    border-radius:50%; border:3px solid var(--brass);
+    padding:10px; position:relative;
+  }
+  .portrait-frame::before{
+    content:''; position:absolute; inset:-10px; border-radius:50%; border:1px solid var(--brass); opacity:0.5;
+  }
+  .portrait-inner{
+    width:100%; height:100%; border-radius:50%;
+    background:repeating-linear-gradient(135deg, var(--paper), var(--paper) 10px, #EEE7D6 10px, #EEE7D6 20px);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    border:1px dashed var(--stone-dark);
+  }
+  .portrait-inner span{font-family:var(--mono); font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-soft); padding:0 1.5rem;}
+
+  /* ---------- SECTION HEADS ---------- */
+  section{padding:4.5rem 0;}
+  .section-head{max-width:60ch; margin-bottom:3rem;}
+  .section-head h2{font-family:var(--serif-display); font-weight:600; font-size:clamp(1.9rem, 3.5vw, 2.6rem); margin:0.4rem 0 0.8rem; color:var(--ink);}
+  .section-head p{color:var(--text-soft); margin:0;}
+
+  /* ---------- TIMELINE ---------- */
+  .timeline{position:relative; margin-top:2rem;}
+  .timeline::before{
+    content:''; position:absolute; left:50%; top:6px; bottom:6px; width:2px; transform:translateX(-50%);
+    background:repeating-linear-gradient(to bottom, var(--brass) 0 8px, transparent 8px 18px);
+  }
+  .exhibit{position:relative; width:50%; padding-bottom:3.4rem;}
+  .exhibit:last-child{padding-bottom:0;}
+  .exhibit:nth-child(odd){left:0; padding-right:3.5rem; text-align:right;}
+  .exhibit:nth-child(even){left:50%; padding-left:3.5rem; text-align:left;}
+  .exhibit-marker{
+    position:absolute; top:0.3rem; width:15px; height:15px; border-radius:50%;
+    background:var(--brass); border:3px solid var(--stone); box-shadow:0 0 0 1px var(--brass);
+  }
+  .exhibit:nth-child(odd) .exhibit-marker{right:-8.5px;}
+  .exhibit:nth-child(even) .exhibit-marker{left:-8.5px;}
+
+  .exhibit-card{
+    background:var(--paper); border:1px solid var(--stone-dark); padding:1.6rem 1.8rem;
+    opacity:0; transform:translateY(16px); transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  .exhibit-card.in-view{opacity:1; transform:translateY(0);}
+  .exhibit:nth-child(odd) .exhibit-card{margin-left:auto;}
+
+  .exhibit-num{font-family:var(--mono); font-size:0.72rem; letter-spacing:0.14em; color:var(--brass); display:block; margin-bottom:0.4rem;}
+  .exhibit-loc{font-family:var(--mono); font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-soft); margin-bottom:0.6rem;}
+  .exhibit-card h3{font-family:var(--serif-display); font-weight:600; font-size:1.4rem; margin:0 0 0.6rem; color:var(--ink);}
+  .exhibit-card p{margin:0; color:var(--text-soft); font-size:0.98rem;}
+  .exhibit-card p + p{margin-top:0.75rem;}
+  .exhibit-tags{display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.9rem;}
+  .exhibit:nth-child(odd) .exhibit-tags{justify-content:flex-end;}
+  .tag{font-family:var(--mono); font-size:0.65rem; letter-spacing:0.04em; text-transform:uppercase; border:1px solid var(--stone-dark); padding:0.25rem 0.55rem; color:var(--text-soft);}
+
+  @media (max-width:760px){
+    .timeline::before{left:14px;}
+    .exhibit, .exhibit:nth-child(odd), .exhibit:nth-child(even){
+      width:100%; left:0; padding-left:2.6rem; padding-right:0; text-align:left;
+    }
+    .exhibit:nth-child(odd) .exhibit-marker, .exhibit:nth-child(even) .exhibit-marker{left:7px;}
+    .exhibit:nth-child(odd) .exhibit-card{margin-left:0;}
+    .exhibit:nth-child(odd) .exhibit-tags{justify-content:flex-start;}
+  }
+
+  /* ---------- PRACTICE AREAS ---------- */
+  .practice-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:1.4rem;}
+  @media (max-width:700px){ .practice-grid{grid-template-columns:1fr;} }
+  .practice-card{
+    border:1px solid var(--stone-dark); padding:1.8rem; background:var(--paper);
+    position:relative; overflow:hidden;
+  }
+  .practice-card::before{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--brass);}
+  .practice-card.incoming::before{background:var(--maroon);}
+  .practice-card h3{font-family:var(--serif-display); font-weight:600; font-size:1.2rem; margin:0 0 0.6rem; color:var(--ink);}
+  .practice-card p{margin:0; color:var(--text-soft); font-size:0.95rem;}
+  .practice-card .badge{font-family:var(--mono); font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--maroon); display:block; margin-top:0.9rem;}
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  footer{background:var(--ink-deep); color:var(--stone); padding:4.5rem 0 3rem; margin-top:2rem;}
+  footer .eyebrow{color:var(--brass-light);}
+  footer h2{font-family:var(--serif-display); font-weight:600; font-size:clamp(1.8rem, 4vw, 2.6rem); margin:0.5rem 0 1.2rem;}
+  footer p.lede{max-width:50ch; color:#C7C2B4; margin-bottom:2.2rem;}
+  .contact-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.8rem; margin-bottom:3rem;}
+  .contact-item span.label{font-family:var(--mono); font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--brass-light); display:block; margin-bottom:0.4rem;}
+  .contact-item a, .contact-item div{color:var(--stone); text-decoration:none; font-size:0.98rem;}
+  .contact-item a:hover{color:var(--brass-light);}
+  footer .bottom{border-top:1px solid rgba(237,231,217,0.15); padding-top:1.6rem; display:flex; flex-wrap:wrap; justify-content:space-between; gap:1rem; font-family:var(--mono); font-size:0.72rem; color:#8A8576;}
+
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brandmark">RM</a>
+    <div class="navlinks">
+      <a href="#journey">Journey</a>
+      <a href="#practice">Practice</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Catalogue No. RM&#8209;2026 &middot; Enrolled Advocate</span>
+        <h1>Rishabh<br>Mitra</h1>
+        <p class="role">Regulatory counsel, in transit from real estate to fintech</p>
+        <p class="lede">Three years of in-house practice in cross-border compliance and transactional law, now heading to Vilnius to specialise in EU financial services regulation.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="mailto:rishabhmitra100@gmail.com">Email</a>
+          <a class="btn btn-outline" href="https://linkedin.com/in/rishabhmitra" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-outline" href="assets/Rishabh-Mitra-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>Based in</strong> Delhi, India</span>
+          <span><strong>Relocating to</strong> Vilnius, Lithuania, September 2026</span>
+          <span><strong>Bar enrolment</strong> Maharashtra &amp; Goa, September 2022</span>
+        </div>
+      </div>
+      <div class="portrait-frame">
+        <div class="portrait-inner"><span>Photograph<br>to be added</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="journey">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Permanent Collection</span>
+        <h2>The Journey</h2>
+        <p>Four stops, one thread: Bengal to Delhi, Delhi to Mumbai, and Mumbai onward to Vilnius.</p>
+      </div>
+
+      <div class="timeline">
+
+        <article class="exhibit">
+          <span class="exhibit-marker"></span>
+          <div class="exhibit-card">
+            <span class="exhibit-num">Exhibit No. 01</span>
+            <span class="exhibit-loc">Jhargram, West Bengal</span>
+            <h3>Origins</h3>
+            <p>The family's roots are in a village in Jhargram, West Bengal, where earlier generations lived before a work transfer took Rishabh's father to Delhi. The move happened before school did, but Bengali stayed the language of home: the first language learned, spoken at the dinner table long after the address changed, and still the language precision gets measured against when a clause needs to say exactly one thing and nothing else.</p>
+          </div>
+        </article>
+
+        <article class="exhibit">
+          <span class="exhibit-marker"></span>
+          <div class="exhibit-card">
+            <span class="exhibit-num">Exhibit No. 02</span>
+            <span class="exhibit-loc">Delhi, India &middot; 2013&ndash;2019</span>
+            <h3>School, stage, seminars</h3>
+            <p>Class XII at Gyan Bharati School came with more extracurriculars than any transcript shows: co-founder and president of the Rotaract Club and Dramatics Society, a regular on the debate circuit, a committed member of the astronomy club (the one that stuck the longest), and an occasional writer of poetry. Ramjas College, Delhi University followed, for a BA (Honours) in English: organising annual seminars, then running operations for the Woodpecker International Film Festival.</p>
+            <p>The English degree left one habit that outlasted it. Reading the same text through a Marxist lens, then a feminist one, then through the lens of cultural heteronormativity, teaches you how much meaning shifts depending on where you stand. It made the LLB that followed less a list of provisions to memorise and more a narrative to read closely, the same instinct later turned on something as specific as how Mumbai's culture and Mumbai's real estate law shaped each other.</p>
+            <div class="exhibit-tags"><span class="tag">Dramatics Society</span><span class="tag">Debate Club</span><span class="tag">Astronomy Club</span><span class="tag">Rotaract</span><span class="tag">Poetry</span></div>
+          </div>
+        </article>
+
+        <article class="exhibit">
+          <span class="exhibit-marker"></span>
+          <div class="exhibit-card">
+            <span class="exhibit-num">Exhibit No. 03</span>
+            <span class="exhibit-loc">Mumbai, India &middot; 2019&ndash;2025</span>
+            <h3>The law, in practice</h3>
+            <p>That instinct for reading a place through its texts followed Rishabh to Mumbai for an LLB at Mumbai University, then into three years inside Brookfield Properties India's in-house legal team, seconded through JLL. He was enrolled as an advocate with the Bar Council of Maharashtra and Goa in September 2022.</p>
+            <p>The work was transactional at its core: leading documentation on a Rs. 3.5 billion, ten-year lease with State Street Corporation, from heads of terms through to the executed deed. It extended into mergers and acquisitions, running the due diligence response for a proposed sale of a Brookfield asset, coordinating requisition lists across corporate records, FEMA and exchange control filings, title documentation and regulatory approvals, and maintaining the virtual data room throughout. A separate engagement with IFC (World Bank) brought cross-border compliance under FCPA, OFAC and the UK Bribery Act into the same practice.</p>
+            <div class="exhibit-tags"><span class="tag">M&amp;A &amp; Due Diligence</span><span class="tag">FCPA / OFAC</span><span class="tag">FEMA</span><span class="tag">Lease Documentation</span></div>
+          </div>
+        </article>
+
+        <article class="exhibit">
+          <span class="exhibit-marker"></span>
+          <div class="exhibit-card">
+            <span class="exhibit-num">Exhibit No. 04</span>
+            <span class="exhibit-loc">Vilnius, Lithuania &middot; From Sept 2026</span>
+            <h3>The next exhibit</h3>
+            <p>A Master in Law, Technology and Business at Mykolas Romeris University, aimed squarely at EU fintech regulation: AML/CTF, KYC/KYB, sanctions screening, DORA and MiCA. This case is still being built.</p>
+            <div class="exhibit-tags"><span class="tag">AML/CTF</span><span class="tag">DORA</span><span class="tag">MiCA</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="practice">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Areas of Practice</span>
+        <h2>What the work involves</h2>
+        <p>Regulatory ground already covered, and the ground being prepared for next.</p>
+      </div>
+      <div class="practice-grid">
+        <div class="practice-card">
+          <h3>Mergers, Acquisitions &amp; Due Diligence</h3>
+          <p>Due diligence coordination for asset sales and acquisitions, virtual data room management, and multi-workstream requisition lists spanning corporate records, financing documentation and regulatory approvals.</p>
+        </div>
+        <div class="practice-card">
+          <h3>Cross-Border Regulatory Compliance</h3>
+          <p>FCPA, OFAC and UK Bribery Act obligations on international transactions, plus FEMA and RBI exchange control matters including FC-TRS and FC-GPR filings.</p>
+        </div>
+        <div class="practice-card">
+          <h3>Contracts &amp; Transaction Documentation</h3>
+          <p>Lease deeds, heads of terms, settlement deeds and commercial agreements, drafted and negotiated to institutional documentation standards.</p>
+        </div>
+        <div class="practice-card incoming">
+          <h3>EU Financial Regulation</h3>
+          <p>AML/CTF, KYC/KYB, sanctions screening, DORA and MiCA: the focus of postgraduate study in Vilnius from September 2026.</p>
+          <span class="badge">Incoming, Sept 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Enquiries</span>
+    <h2>Get in touch</h2>
+    <p class="lede">Open to compliance, due diligence and KYC roles in European financial services and fintech, from September 2026.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span class="label">Email</span>
+        <a href="mailto:rishabhmitra100@gmail.com">rishabhmitra100@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">Phone</span>
+        <div>+91 90971 78206</div>
+      </div>
+      <div class="contact-item">
+        <span class="label">LinkedIn</span>
+        <a href="https://linkedin.com/in/rishabhmitra" target="_blank" rel="noopener">linkedin.com/in/rishabhmitra</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">Languages</span>
+        <div>Bengali (native), English &amp; Hindi (fluent), Japanese (working)</div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 Rishabh Mitra</span>
+      <span>Delhi, India &middot; Relocating to Vilnius, Lithuania</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal exhibit cards on scroll, respecting reduced-motion preference
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cards = document.querySelectorAll('.exhibit-card');
+  if(prefersReduced){
+    cards.forEach(function(c){ c.classList.add('in-view'); });
+  } else if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    cards.forEach(function(c){ io.observe(c); });
+  } else {
+    cards.forEach(function(c){ c.classList.add('in-view'); });
+  }
+</script>
+
+</body>
+</html>
